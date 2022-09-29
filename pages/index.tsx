@@ -5,7 +5,7 @@ import { Suspense } from 'react'
 // import { David } from '../components/David'
 import { Dav } from '../components/Dav'
 import styles from './Index.module.css'
-import { Pau } from '../components/Pau'
+// import { Pau } from '../components/Pau'
 
 const estilos = {
 
@@ -33,23 +33,21 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <div className={styles.canvas} style={{backgroundColor: '#f5f5f5', width:'90%'}}>
+      {/* <div className={styles.canvas} style={{backgroundColor: '#f5f5f5', width:'90%'}}>
         <Pau>
 
         </Pau>
 
-      </div>
+      </div> */}
     
       <div className={styles.canvas} style={{backgroundColor: '#f5f5f5', width:'90%'}}>
-        {/* <div>
-          <h1 style={{ position:'absolute'}}>Auxiliar Manipuladora</h1>
-        </div> */}
-        {/* <div className={styles.container}>
+       
+        <div className={styles.container}>
           <h1 className={styles.titulo} style={estilos} >Auxiliar Manipuladora</h1>
         </div>
         <div className={styles.movil}>
           <h1 className={styles.telefono} style={estilos} >968 693 575</h1>
-        </div> */}
+        </div> 
         <Canvas
           style={{ width: '100%', margin:'auto', height:'88vh', border:'2px solid black'}}
           camera={{view: 
